@@ -1,8 +1,11 @@
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Container, createTheme, Stack } from "@mui/material";
 import { Feed } from "./components/Feed";
 import { Navbar } from "./components/Navbar";
 import { Rightbar } from "./components/Rightbar";
 import { Sidebar } from "./components/Sidebar";
+import { Add } from "./components/Add";
+import { ThemeProvider } from "styled-components";
+import React, { useState } from "react";
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
         <Feed />
         <Rightbar />
       </Stack>
+      <Add />
     </Box>
   );
 }
