@@ -16,6 +16,7 @@ import {
   Switch,
 } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
   return (
@@ -23,7 +24,7 @@ export const Sidebar = () => {
       <Box position="fixed">
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/">
               <ListItemIcon>
                 <Home />
               </ListItemIcon>
@@ -31,14 +32,14 @@ export const Sidebar = () => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/pages">
               <ListItemIcon>
                 <Pages />
               </ListItemIcon>
               <ListItemText primary="Pages" />
             </ListItemButton>
           </ListItem>
-          <ListItemButton component="a" href="#home">
+          <ListItemButton component={Link} to="/groups">
             <ListItemIcon>
               <Groups />
             </ListItemIcon>
